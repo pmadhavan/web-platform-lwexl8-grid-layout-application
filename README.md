@@ -1,4 +1,4 @@
-### Tic tac toe game
+### Game board (Tic tac toe, memory game, Chess)
 
 - Creating a 3x3 , nxn or m by n board is very easy with grid layout
 ```
