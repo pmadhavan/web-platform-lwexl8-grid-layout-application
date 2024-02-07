@@ -1,28 +1,26 @@
 ### Tic tac toe game
 
 - Creating a 3x3 , nxn or m by n board is very easy with grid layout
-  ///
+```
   .wrapper{
+   width: 150px; // Set a width for the width, this should be the sum of the n num of columns
+   display: grid; // define the layout type
+   // Because the html containers are generally placed in rows, we need to explicitly define the number of columns for the our layout. 3 here refers to number of columns and 1fr is the flexible unit that divides the available space by the number columns defined earlier.
 
-width: 150px; // Set a width for the width, this should be the sum of the n num of columns
-display: grid; // define the layout type
-/_
-// Because the html containers are generally placed in rows, we need to explicitly define the number of columns for the our layout. 3 here refers to number of columns and 1fr is the flexible unit that divides the available space by the number columns defined earlier.
-_/
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr); // Not necessary to achieve the layout
-}
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr); // Not necessary to achieve the layout
+  }
 
-.box{
-width: 50px; // wrapper width/ 3Should match the individual column width or divided by wrapper width
-height: 50px;
-border: 1px solid #aaa;
-}
-///
+  .box{
+  width: 50px; // wrapper width/ 3Should match the individual column width or divided by wrapper width
+  height: 50px;
+  border: 1px solid #aaa;
+} 
+```
 
 For the number of col and width of the parent we can use calc and var css properties
 
-///
+```
 .square{
 width: calc(var(--parent-width)/var(--col));
 height: 50px;
@@ -37,8 +35,7 @@ border: 1px solid #aaa;
 grid-template-columns: repeat(var(--col), 50px);
 width: var(--parent-width);
 }
-///
-
+```
 ### Calculator Layout
 
 1. First figure out the layout of the calculator you are implementing, to determine number of rows and cols. To begin with I started 5 rows and 4 cols and later on realized i missed the input display so added it.
