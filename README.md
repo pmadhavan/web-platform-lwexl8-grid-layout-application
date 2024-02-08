@@ -1,3 +1,12 @@
+## About the Project
+This repository features a curated collection of CSS Grid usages commonly encountered in front-end interviews. While many interviewers are willing to compromise on CSS layout perfection due to time constraints, practicing these simple and frequently used CSS Grid layouts can contribute to earning extra points.
+
+## Demo
+
+https://stackblitz.com/edit/web-platform-lwexl8?file=index.html
+
+## TIL
+
 ### Game board (Tic tac toe, memory game, Chess)
 
 - Creating a 3x3 , nxn or m by n board is very easy with grid layout
